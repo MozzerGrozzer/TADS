@@ -1,0 +1,60 @@
+2)
+ALGORITMO;
+DECLARE N1, N2, N3 NUMÉRICA;
+ESCREVA "INSIRA NOTAS:";
+LEIA N1, N2, N3;
+MA <- (N1+N2+N3)/3.0;
+ESCREVA "Média aritmética é", MA;
+FIM_ALGORITMO;
+
+3)
+ALGORITMO;
+DECLARE N1,N2,N3, MP, P1,P2,P3 NUMÉRICA;
+ESCREVA "Insira Notas...";
+LEIA N1, N2, N3;
+ESCREVA "Insira Peso...";
+LEIA P1, P2, P3;
+MP <- (N1*P1+N2*P2+N3*P3)/(P1+P2+P3);
+ESCREVA "A média ponderada é", MP;
+
+4)
+ALGORITMO;
+DECLARE S, NS NUMERICO;
+ESCREVA "Insira seu salário";
+LEIA S;
+NS <- S * 0.25 + S;
+ESCREVA "Seu salário atual é:", NS;
+FIM_ALGORITMO;
+
+5)
+ALGORITMO;
+DECLARE S, P, NS NUMERICO;
+ESCREVA "Insira o salário";
+LEIA S;
+ESCREVA "Insira Aumento";
+LEIA P1NS <- S + P;
+ESCREVA "Do aumento de:" P, "Salario Atual:", NS;
+FIM_ALGORITMO;
+
+# Lista 2
+
+1)
+ALGORITMO;
+DECLARE A,R,PI NUMERICO;
+PI <- 3,1415;
+ESCREVA; "Valor do Raio"
+LEIA R;
+A <- PI*R*R;
+ESCREVA "Sua área é:", A;
+FIM_ALGORITMO;
+
+2)
+ALGORITMO;
+DECLARE N, Q, C, RQ, RC NUMERICO;
+ESCREVA "Insira um numero";
+LEIA N;
+ESCREVA "Quadrado =", Q <- N*N;
+ESCREVA "Cubo =", C <- N*N*N;
+ESCREVA "Raiz Quadrada =", C <- RQ<- N**(1/2);
+ESCREVA "Raiz Cubica =", C <- RC<- N**(1/3);
+FIM_ALGORITMO;
