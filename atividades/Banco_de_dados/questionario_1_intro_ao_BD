@@ -1,0 +1,58 @@
+	1. Qual a principal diferença entre um Sistema Gerenciador de Banco de Dados (SGBD) e um arquivo de planilha?
+
+Ambos servem o mesmo tipo de função lógica de armazenar informações essenciais que são facilmente accessíveis pelo editor base do usuário (Excel é um conhecido editor de planilha). Gerenciadores de Banco de Dados em contrapartida internam um número muito maior de informação que o Excel consegue fornecer de uma forma acessível e de uma forma que seja organizada independente da capacidade do editor ou quem seja que esteja averiguando os dados.
+	É bem comum de editores que tenham o acesso ao banco de dados podem ter acesso simultâneo ao sistema que o armazena, para que tenham acesso a mesma informação.
+	Assim como o Moccha (vulgo Javascript), programas de planilha foram criados para que o usuário tem uma experiência acessível com a ferramenta diante dele. Quanto mais eficiente melhor a retenção do usuário em um nível fundamental. Enquanto isso, SGBD é voltado ao armazenamento bruto e expansivo, geralmente custando sua experiência de usuário, voltado especialmente ao profissionais dotados na sua área de trabalho e que necessitariam um grande repositório para suas atividades.
+	Isso me leva a pensar que muitas planilhas de Excel são salvas em bancos de dados.
+
+A resposta é D, todas as alternativas estão certas e isso tudo foi feito para mostrar que o Banco de Dados é superior nesse sentido.
+
+	2. Qual a principal vantagem de utilizar um SGBD em comparação com arquivos simples?
+
+A resposta é B
+
+	3. Quais os principais tipos de modelos de dados utilizados em SGBDs?
+
+De acordo com Gemini todos os modelos de banco de dados são: 
+- Modelo Relacional: organizado em tabelas ou colunas.
+- Modelo não relacional (NoSQL): abriga estrutura flexíveis que dispensam tabelas fixas, dividindo-se em subtipos como chave-valor (pares simples de índice e conteúdo), Documento (JSON ou BSON), Colunar (agrupa dados em por colunas verticais para performace analítica) e Grafos (Nós e arestas para mapear conexões complexas entre entidades)
+- Modelo Hierárquico (Ou Pai-Filho): Estrutura em formato de árvore genealógica invertida onde cada registro tem apenas um superior
+- Modelo de Rede: Evolução do hierárquico que permite múltiplos relacionamentos entre os registros
+- Orientado a Obejtos: Mapeia os dados como objetos com atributos e métodos, espelhando linguaguens de programação e sistemas OLAP, estruturdo em formato de cubos
+
+"O XML (Extensible Markup Language) é uma linguagem de marcação usada para organizar, armazenar e transferir dados de forma estruturada entre diferentes sistemas e aplicativos. Ele não executa funções ou comandos como uma linguagem de programação, mas usa etiquetas (tags) para definir o significado de cada dado." (tmb feito em IA)
+
+A resposta é A pois é a que tem todas as alternativas da lista e que usa todos os aplicáveis do modelo
+
+	4. O que é uma chave primária em uma tabela de banco de dados?
+
+Chave primária atribui atributos que só podem ser de uma coluna. É o C
+
+	5. O que é uma relação entre duas tabelas em um banco de dados
+relacional?
+
+"Relação entre duas tabelas" é uma comunicação entre informações separadas feitas por uma chave primária e uma chave estrangeira, a qual permite organizar dados de forma lógica que evita o mesmo valor.
+A resposta é a B pois é a única que se aproxima da definição
+
+	6. O que é uma normalização de banco de dados?
+
+Você deixa o banco de dados livre de informações repetidas ou inconsistentes (Avenida Pinheiros, Av. Pinheiros ou Pinheiros).
+A resposta é C
+
+	7. Qual a diferença entre SQL e NoSQL?
+
+SQL usa tabelas com luinhas e colunas fixas, como se fosse uma planilha tradicional. O NOSQL é a antítese disso, guardando dados soltos, documentas, listas ou pares de palavras sem um formato rígido (Pense em um repositório tradicional ou um armazém desorganizado).
+
+A resposta é a C pois os outros dois não fazem o menor sentido.
+
+	8. Quais os principais tipos de bancos de dados NoSQL?
+
+Documentos, Chave-Valor, Colunares e Grafos é a alternativa A
+
+	9. Qual a importância de se estudar Introdução a Banco de Dados?
+
+D weow
+
+	10. Qual a melhor maneira de se aprofundar em Introdução a Banco de Dados?
+
+D
