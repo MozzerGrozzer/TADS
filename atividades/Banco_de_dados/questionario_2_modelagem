@@ -1,0 +1,25 @@
+	1. Qual a principal diferença entre um modelo conceitual e um modelo físico de banco de dados?
+
+Conceito é definido como formulação de uma ideia ou representação mental sobre algo. Literalmente sendo algo meramente idealista. Enquanto Físico é material e corpóreo, no sentido que ele se submete as limitações da natureza.
+Logísticas do português à parte, a resposta é A pois ela é bem mais trabalhada que as outras.
+
+	2. Qual a ferramenta mais utilizada para a modelagem conceitual de bancos de dados?
+
+Imagino que seja qualquer editor visual consiga de forma conceitual. Entre as opções, CASE cria muito mais que apenas conceitos de banco de dados, planilhas são muito ingênuas e pequenas e software de gerenciamento de banco de dados é para criar o banco de dado em si.
+	Criar algo conceitual na ferramenta SQL em si é uma opção de fato e é a resposta dessa questão.
+
+	3. Quais os principais tipos de entidades em um modelo conceitual de banco de dados?
+
+	4. O que é um relacionamento entre entidades em um modelo conceitual de banco de dados?
+
+	5. Quais os principais tipos de cardinalidade em um relacionamento entre entidades?
+
+	6. Qual a diferença entre um atributo e uma chave primária em uma entidade?
+
+	7. O que é um diagrama de entidade-relacionamento (DER)?
+
+	8. Quais os principais elementos de um diagrama DER?
+
+	9. Qual a importância de se estudar Modelagem Conceitual de Banco de Dados?
+
+	10. Qual a melhor maneira de se aprofundar em Modelagem Conceitual de Banco de Dados?
