@@ -1,0 +1,41 @@
+1)
+ALGORITMO;
+DECLARE nome LITERAL;
+LEIA nome;
+ESCREVA "Bem vindo", nome;
+FIM_ALGORITMO;
+
+2)
+ALGORITMO;
+DECLARE n1, n2, R NUMERICO;
+ESCREVA: "Insira dois números";
+R <- n1 - n2;
+ESCREVA: "A subtração entre seus números é", R;
+FIM_ALGORITMO;
+
+3)
+ALGORITMO
+DECLARE base, altura, area, NUMERICO;
+ESCREVA: "Insira a base e a altura"
+LEIA base, altura
+area <- base * altura
+ESCREVA: "A área será:", area;
+FIM_ALGORITMO
+
+4)
+ALGORITMO;
+DECLARE n1, n2, n3, MA NUMERICO;
+ESCREVA: "Insira suas três notas:";
+LEIA n1, n2, n3;
+MA <- (n1+n2+n3)/3,0
+ESCREVA "Sua média aritmética é:", MA;
+FIM_ALGORITMO;
+
+5)
+ALGORITIMO
+DECLARE S,NS NUMERICO
+ESCREVA "INSIRA O SALARIO"
+LEIA S
+NS <- S * 0.15 + S
+ESCREVA "SEU SALARIO ATUAL É",NS
+FIM_ALGORITIMO
