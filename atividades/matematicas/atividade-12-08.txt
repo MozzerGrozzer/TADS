@@ -137,7 +137,7 @@ ESCREVA "INSIRA O PERCENTUAL DE IMPOSTOS"
 LEIA PI
 LU <- PF * (PL/100)
 IM <- PF * (PI/100)
-VF <- PF + LU + IM
+
 ESCREVA "O lucro do distribuidor é", LU
 ESCREVA "O valor dos impostos é", IM
 ESCREVA "O preço final é", VF
