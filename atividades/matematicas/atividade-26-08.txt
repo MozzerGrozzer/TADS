@@ -179,8 +179,25 @@ ENTÃO INICIAR
 	FIM
 FIM_ALGORITMO 	
 
-
-
+9) 
+ALGORITMO
+DECLARE angulo, angulo_reduzido, voltas NUMERAL
+ESCREVA "Digite a medida do ângulo em graus: "
+LEIA angulo
+voltas = angulo / 360
+SE voltas < 0
+	ESCREVA: "Sentido: Anti-horário"
+	SENÃO ESCREVA "Sentido: Horário"
+angulo_reduzido = angulo % 360
+SE angulo_reduzido > 0 E angulo_reduzido < 90
+	ESCREVA Localização: 1º Quadrante
+SENÃO SE angulo_reduzido > 90 E angulo_reduzido < 180
+	ESCREVA Localização: 2º Quadrante
+SENÃO SE angulo_reduzido > 180 E angulo_reduzido < 270
+	ESCREVA Localização: 3º Quadrante
+SENÃO SE angulo_reduzido > 270 E angulo_reduzido < 360
+	ESCREVA Localização: 4º Quadrante
+FIM_ALGORITMO
 
 
 
