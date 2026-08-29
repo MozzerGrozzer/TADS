@@ -48,3 +48,20 @@ h1{
         transform: translateY(-15px);
     }
 }
+
+.recents, .flexGridGeneral{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: inherit;
+    height:50vh;
+}
+
+.flexGridRecents, .flexGridGeneral{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:50px;
+}
