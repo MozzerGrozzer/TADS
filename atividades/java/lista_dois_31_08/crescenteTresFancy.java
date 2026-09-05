@@ -8,20 +8,22 @@ public class crescenteTresFancy {
 
         System.out.println("Insira três números diferentes");
 
-        n1 = sc.nextInt(); // esse código em especifico foi feito com IA, zero fudendos totais que eu iria pensar nisso, mas é bom manter para
-        n2 = sc.nextInt(); // futuras vezes que eu tiver que organizar numerozinho via java
-        n3 = sc.nextInt(); // Mozzer.dev
+        n1 = sc.nextInt(); 
+         
+        
+        n2 = sc.nextInt(); 
+        n3 = sc.nextInt(); 
 
         if (n1 > n2) {
             aux = n1;
             n1 = n2;
             n2 = aux;
-        }
-
-        if (n1 > n3) {
-            aux = n1;
-            n1 = n3;
-            n3 = aux;
+        }               // esse código em especifico foi feito com IA, 
+                        // zero fudendos totais que eu iria pensar nisso,
+        if (n1 > n3) { // mas é bom manter para
+            aux = n1; // futuras vezes que eu tiver que organizar 
+            n1 = n3; // numerozinho via java
+            n3 = aux; // Mozzer.dev
         }
 
         if (n2 > n3) {
