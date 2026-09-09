@@ -1,0 +1,59 @@
+gerenciamento de produtos via terminal
+
+objetivo: criar terminal que gerencia 4 tipos de carros com partes modulares.
+
+Carros escolhido:
+
+Palio
+Celta
+Gol
+Uno
+
+cada parte e carro terá um preço que será mostrado no final. Junto de cada opção terá um preço, envolvendo 3 genéricos e 2 específicos para cada opção:
+
+ex:
+
+Parachoque:
+
+1 - GAD Parachoque Cobra (2 reais)
+2 - EED Parachoque Malandro (1 real)
+3 - KLS Parachoque Grip (5 real)
+Especiais
+4 - algo especifico sla mas parachoque (10 pila)
+5 - LOL stop shocker (2 pila)
+6 - amor reciproco (mais do que você tem)
+
+double math.random()
+
+partes modulares:
+
+- cor do carro (4)
+- capo
+- parachoque
+- paralama
+- body kit
+- escapamento
+- fumê / insulfilm (em porcentagem)
+- santo Antônio
+- suspenção
+- neon
+- roda
+- pneu
+- aro
+- aero fólio
+- lateral
+- teto solar
+- spoiler
+- farol
+- interior
+- velocímetros
+- retrovisor
+
+você escolheu o carro:
+fulano
+citrano (prço)
+coisa e (preço)
+tal(preço)
+
+confirmar
+tirar item 
