@@ -13,6 +13,30 @@ h1{
     font-size: 72px;
 }
 
+h2{
+    font-family: "Anton SC", sans-serif;
+    font-size: 36px;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 35px;
+    background-color:rgb(79, 79, 255);
+}
+
+header p {
+    color:white;
+    font-family: "Anton SC", sans-serif;
+}
+
+header em {
+    font-family: "Caprasimo", serif;
+    font-size: 20px;
+}
+
 .mainText{
     width: auto;
     line-height: 60px;
@@ -65,12 +89,28 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:5%;
+    padding:2%;
+    background-color: white;
 }
 
 .flexGridGeneral, .flexGridRecents{
     display:flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 75px;
     padding:1%;
+}
+
+#gridItem{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gridItem img{
+    width:120px;
+}
+
+#gridItem a{
+    font-family: 'Courier New', Courier, monospace;
 }
