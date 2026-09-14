@@ -4,22 +4,33 @@ main{
     align-items: center;
     justify-content: center;
     width: inherit;
+    position: relative;
     height: 90vh;
     background-color: rgb(209, 224, 226);
 }
 
 h1{
-    font-family: "Caprasimo", serif;
     font-size: 72px;
-    color:blue;
 }
 
 .mainText{
-    transform: rotate(-1deg);
+    width: auto;
+    line-height: 60px;
+    font-family: "Anton SC", sans-serif;
+    color:rgb(34, 34, 71);
+}
+
+.waveContainer{
+    display:flex;
+    transform: rotateZ(-2deg);
+    right:31%;
+    position: absolute;
+    color:rgb(79, 79, 255);
 }
 
 .waveText span {
     display: inline-block;
+    font-family: "Caprasimo", serif;
     font-size: 125px;
     animation: wave 1.3s ease-in-out infinite;
 }
