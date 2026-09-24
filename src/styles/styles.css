@@ -110,7 +110,7 @@ main p{
     padding:1%;
 }
 
-#gridItem{
+#gridItem a{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -121,6 +121,6 @@ main p{
     width:120px;
 }
 
-#gridItem a{
+#gridItem p{
     font-family: 'Courier New', Courier, monospace;
 }
