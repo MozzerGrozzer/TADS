@@ -7,6 +7,7 @@ main{
     position: relative;
     height: 90vh;
     background-color: #4f4fff;
+    font-family: "Oswald", sans-serif;
 }
 
 header{
@@ -42,6 +43,14 @@ h2{
     font-size: 36px;
 }
 
+p{
+    font-family: "Oswald", sans-serif;
+}
+
+#Oswald{ /*Forçado pq eu to poucas ideia*/
+    font-family: "Oswald", sans-serif; 
+}
+
 .mainText{
     width: auto;
     color:#222247;
@@ -50,11 +59,13 @@ h2{
 
 main p {
     color:white;
+    font-family: "Oswald", sans-serif;
 }
 
 main a {
     color:#222247;
     text-decoration: underline;
+    font-family: "Oswald", sans-serif;
 }
 
 .waveContainer{
@@ -64,7 +75,6 @@ main a {
     top:45%;
     position: absolute;
     color:white;
-
 }
 
 main p{
@@ -113,7 +123,7 @@ main p{
     }
 }
 
-.recents, .general, .onboarding{
+.recents, .general, .onboarding, .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,17 +132,32 @@ main p{
     background-color: white;
 }
 
-.onboarding{
+.onboarding, .container{
     flex-direction: row;
     padding:0px 12% 0px 12%;
     background-color: #4f4fff;
     color:white;
 }
 
+.alt{
+    background-color: white; /*versão alternativa*/
+    color:#222247;
+}
+
 .onboarding p{
     padding-left: 5%;
     padding-right: 5%;
-    color:rgb(34, 34, 71);
+    color:#222247;
+}
+
+.container p{
+    padding-left: 5%;
+    padding-right: 5%;
+    color:white;
+}
+
+.alt p{
+    color:#222247;
 }
 
 .flexGridGeneral, .flexGridRecents{
