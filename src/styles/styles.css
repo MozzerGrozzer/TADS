@@ -44,8 +44,17 @@ h2{
 
 .mainText{
     width: auto;
-    color:rgb(34, 34, 71);
+    color:#222247;
     padding-bottom: 2%;
+}
+
+main p {
+    color:white;
+}
+
+main a {
+    color:#222247;
+    text-decoration: underline;
 }
 
 .waveContainer{
@@ -116,12 +125,14 @@ main p{
 .onboarding{
     flex-direction: row;
     padding:0px 12% 0px 12%;
-    background-color: rgb(209, 224, 226);
+    background-color: #4f4fff;
+    color:white;
 }
 
 .onboarding p{
     padding-left: 5%;
     padding-right: 5%;
+    color:rgb(34, 34, 71);
 }
 
 .flexGridGeneral, .flexGridRecents{
