@@ -53,7 +53,7 @@ p{
 
 .mainText{
     width: auto;
-    color:#222247;
+    color:#07062b;
     padding-bottom: 2%;
 }
 
@@ -63,7 +63,7 @@ main p {
 }
 
 main a {
-    color:#222247;
+    color:#07062b;
     text-decoration: underline;
     font-family: "Oswald", sans-serif;
 }
@@ -95,6 +95,7 @@ main p{
     display: inline-block;
     font-family: "Caprasimo", serif;
     font-size: 125px;
+    color:#f9f6e5;
     animation: wave 1.3s ease-in-out infinite;
 }
 
@@ -141,13 +142,13 @@ main p{
 
 .alt{
     background-color: white; /*versão alternativa*/
-    color:#222247;
+    color:#07062b;
 }
 
 .onboarding p{
     padding-left: 5%;
     padding-right: 5%;
-    color:#222247;
+    color:#07062b;
 }
 
 .container p{
@@ -157,7 +158,7 @@ main p{
 }
 
 .alt p{
-    color:#222247;
+    color:#07062b;
 }
 
 .flexGridGeneral, .flexGridRecents{
