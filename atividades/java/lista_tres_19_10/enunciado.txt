@@ -1,0 +1,24 @@
+01    Peça ao usuário para digitar caracteres um a um. Quando ele digitar um ponto final (.), pare a leitura e informe quantos caracteres foram digitados.
+02    Peça uma palavra e conte quantas vogais ela contém (sem usar array, apenas com repetição e charAt).
+03    Peça uma palavra e um número n. Mostre a palavra repetida n vezes, uma por linha.
+04    Leia frases do usuário em loop. Quando ele digitar "sair", o programa termina.
+05    Continue pedindo um nome até que o usuário digite algo com pelo menos 3 letras.
+06    Solicite uma senha e peça confirmação até que ambas coincidam.
+07    Número fixo oculto. O usuário tem até 5 tentativas para adivinhar.
+08    Permita votar em três candidatos até que a palavra "fim" seja digitada. Conte os votos.
+09    Simule um caixa eletrônico que permite vários saques até o saldo acabar ou o usuário sair.
+10    Faça uma pergunta (ex: "Qual a capital do Brasil?") até que o usuário acerte.
+11    Peça CPF até que seja digitado com exatamente 11 dígitos.
+12    Faça 5 perguntas em sequência. Conte quantas foram respondidas corretamente.
+13    Peça uma letra e um número n. Mostre n vezes essa letra em uma mesma linha.
+14    Simule o lançamento de um dado 10 vezes, mostrando os resultados (use um gerador de números aleatórios).
+15    Mostre um menu com 3 opções. Repita até o usuário escolher "Sair".
+16    Peça letras uma a uma até que o usuário digite a letra "x". Conte quantas vezes digitou vogais.
+17    Permita o cadastro de nome e preço de produtos até que "fim" seja digitado. Calcule o total geral.
+18    Peça uma frase e conte quantas palavras tem (com base nos espaços).
+19    Repetir senha até ter maiúscula, número e mínimo de 8 caracteres. Use repetição até uma senha válida ser digitada.
+20    Peça uma palavra e um caractere. Conte quantas vezes o caractere aparece.
+21    Peça um número entre 1 e 100. Repita enquanto estiver fora do intervalo.
+22    Peça uma String e some os dígitos presentes (ex: "a2c4" → 6).
+23    Peça a digitação de um número inteiro até que seja digitado um valor negativo. Ao digitar um valor negativo, deverão ser exibidos a média dos números digitados, o menor número, o maior número, quantidade de números pares e quantidade de números ímpares.
+
