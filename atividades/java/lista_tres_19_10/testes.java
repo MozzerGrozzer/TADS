@@ -1,26 +1,18 @@
 import java.util.Scanner;
+// 11    Peça CPF até que seja digitado com exatamente 11 dígitos.
 
 public class testes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int senha = 808, tentativas = 5, sugestao;
-        System.out.println("Você tem 5 tentativas para decifrar um número de 3 digitos");
-        System.out.println("Digite sua sugestão: ");
-        sugestao = sc.nextInt();
+        System.out.println("Digite seu CPF");
+        int CPF = sc.nextInt();
 
-        while (senha != sugestao || tentativas < 0){
-            System.err.println("Errado...");
-            tentativas--;
-            System.out.println("Você agora tem " + tentativas + " restantes...");
-
-            System.out.println("Digite sua sugestão: ");
-            sugestao = sc.nextInt();
-            
-            if(tentativas == 0){
-                System.err.println("Suas tentativas acabaram");
-                break;
-            }
+        while(CPF < 11){
+            System.err.println("CPF inválido");
+            System.out.println("Digite seu CPF novamente");
+            CPF = sc.nextInt();
         }
-        System.out.println("Senha correta era: " + senha);
+
+        System.out.println(CPF);
     }
 }

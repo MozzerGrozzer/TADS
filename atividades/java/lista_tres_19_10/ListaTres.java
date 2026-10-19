@@ -66,8 +66,6 @@ public class ListaTres {
             } 
         }
         System.out.printf("Quantidade de vogais da palavra \"%s\": %d", palavra, qtdVogais);
-        System.out.println("\n\nAperte Enter para voltar para o menu...");
-        sc.nextLine();
     }
 
     public static void ex03(){
@@ -83,6 +81,20 @@ public class ListaTres {
         for(int i = 0; i < reps; i++){
             System.out.println(palavra);
         }
+    }
+
+    public static void ex04(){
+        System.out.print("Digite uma frase (ou 'sair' para encerrar): ");
+        String frase = sc.nextLine();
+
+        while (!frase.equalsIgnoreCase("sair")) {
+            System.out.println("Você digitou: " + frase);
+
+            System.out.print("Digite outra frase (ou 'sair' para encerrar): ");
+            frase = sc.nextLine();
+        }
+
+        System.out.println("Programa encerrado.");
     }
 
     public static void ex05(){
@@ -134,6 +146,78 @@ public class ListaTres {
             }
         }
         System.out.println("Senha correta era: " + senha);
+    }
+
+    public static void ex08(){
+        System.out.println("Vote nos três candidatos:");
+        System.out.println("1- sim");
+        System.out.println("2 - não");
+        System.out.println("3 - talvez");
+        int candidato = sc.nextInt();
+        int total1 = 0, total2 = 0, total3 = 0;
+        
+        while(candidato != 4){
+            switch(candidato){
+                case 1 -> total1++;
+                case 2 -> total2++;
+                case 3 -> total3++;
+                default -> System.err.println("Opção Inválida");
+            }
+            System.out.println("Vote Novamente !");
+            System.out.println("1- sim");
+            System.out.println("2 - não");
+            System.out.println("3 - talvez");
+            System.out.println("4 - ver os resultados");
+            candidato = sc.nextInt();
+        }
+
+        System.out.println("Os resultados foram:");
+        System.out.println("Votaram no Sim: " + total1);
+        System.out.println("Votaram no não: " + total2);
+        System.out.println("Votaram no talvez: " + total3);
+    }
+
+    public static void ex09(){
+        double saque;
+        boolean continuar = true;
+
+        System.out.println("Quanto de saldo você tem?");
+        double saldo = sc.nextDouble();
+
+        while (saldo > 0 && continuar) {
+            System.out.printf("%nSaldo atual: R$ %.2f%n", saldo);
+            System.out.print("Digite o valor do saque (0 para sair): ");
+            saque = sc.nextDouble();
+
+            if (saque == 0) {
+                continuar = false;
+            } else if (saque < 0) {
+                System.out.println("Digite um valor positivo.");
+            } else if (saque > saldo) {
+                System.out.println("Saldo insuficiente!");
+            } else {
+                saldo -= saque;
+                System.out.println("Saque realizado com sucesso!");
+            }
+        }
+
+        System.out.printf("%nSaldo final: R$ %.2f%n", saldo);
+        System.out.println("Caixa eletrônico encerrado.");
+    }
+
+    public static void ex10(){
+        String resposta = "mocha";
+        System.out.println("Qual era para ser (e deveria ter sido) o nome original do Javascript?");
+        String tentativa = sc.nextLine();
+
+        while(!resposta.equalsIgnoreCase(tentativa)){
+            System.err.println("Errado!");
+
+            System.out.println("\nTente novamente:");
+            tentativa = sc.nextLine();
+        }
+
+        System.out.println("Deveria ter sido mesmo...");
     }
 }
 

@@ -5,7 +5,7 @@
 05    Continue pedindo um nome até que o usuário digite algo com pelo menos 3 letras.
 06    Solicite uma senha e peça confirmação até que ambas coincidam.
 07    Número fixo oculto. O usuário tem até 5 tentativas para adivinhar.
-08    Permita votar em três candidatos até que a palavra "fim" seja digitada. Conte os votos.
+08    Permita votar em três candidatos até que a palavra "fim" seja digitada. Conte os votos
 09    Simule um caixa eletrônico que permite vários saques até o saldo acabar ou o usuário sair.
 10    Faça uma pergunta (ex: "Qual a capital do Brasil?") até que o usuário acerte.
 11    Peça CPF até que seja digitado com exatamente 11 dígitos.
