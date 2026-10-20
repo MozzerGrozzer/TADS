@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class ListaTres {
     public static void main(String[] args) {
@@ -218,6 +219,122 @@ public class ListaTres {
         }
 
         System.out.println("Deveria ter sido mesmo...");
+    }
+
+    public static void ex11(){
+        System.out.println("Digite seu CPF");
+        int CPF = sc.nextInt();
+
+        while(CPF > 11){
+            System.err.println("CPF inválido");
+            System.out.println("Digite seu CPF novamente");
+            CPF = sc.nextInt();
+        }
+
+        System.out.println("CPF aceito!");
+        System.out.println("Seu CPF é: " + CPF);
+    }
+
+    public static void ex12(){
+        int resposta;
+        int acertos = 0;
+
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Quanto é " + i + " + " + i + "?");
+            System.out.print("Sua resposta: ");
+            resposta = sc.nextInt();
+
+            if (resposta == i + i) {
+                acertos++;
+            }
+        }
+
+        System.out.println("Você acertou " + acertos + " de 5 perguntas.");
+    }
+
+    public static void ex13(){
+        System.out.println("Digite uma palavra");
+        String palavra = sc.nextLine();
+
+        System.out.println("Quantas vezes quer ver ela sendo repetida?");
+        int reps = sc.nextInt();
+
+        for(int i=0; i< reps; i++){
+            System.out.print(palavra);
+        }
+    }
+
+    public static void ex14(){
+        Random aleatorio = new Random();
+        System.out.println("De repente, você foi atacado por um dragão que soltou seu bafo infernal contra sua pessoa!!! (10/6)");
+
+        int resultadoTotal = 0;
+
+        for (int i = 1; i <= 10; i++) {
+            int resultado = aleatorio.nextInt(6) + 1;
+
+            System.out.println("Lançamento " + i + ": " + resultado);
+            
+            resultadoTotal += resultado;
+        }
+
+        System.out.println("Você tomou um total de: " + resultadoTotal);        
+
+        if (resultadoTotal > 42)
+            System.out.println("Tragicamente falecendo :(((");
+        else
+            System.out.println("Mas conseguiu sobreviver !!!");
+    }
+
+    public static void ex15(){
+        int op = 0;
+
+        while(op != 4){
+            System.out.println("Menu");
+            System.out.println("1 -");
+            System.out.println("2 -");
+            System.out.println("3 -");
+            System.out.println("4 -");
+            op = sc.nextInt();
+        }
+    }
+
+    public static void ex16(){
+        String entrada;
+        char letra;
+        int vogais = 0;
+
+        do {
+            System.out.print("Digite uma letra (x para sair): ");
+            entrada = sc.next().toLowerCase();
+
+            if (entrada.length() > 1) {
+                System.out.println("Digite no máximo 1 caracteres!");
+            }
+        } while (entrada.length() > 1);
+
+        letra = entrada.charAt(0);
+
+        while (letra != 'x') {
+            if (letra == 'a' || letra == 'e' || letra == 'i'
+                    || letra == 'o' || letra == 'u') {
+                vogais++;
+            }
+
+            do {
+                System.out.print("Digite outra letra (x para sair): ");
+                entrada = sc.next().toLowerCase();
+
+                if (entrada.length() > 1) {
+                    System.out.println("Digite no máximo 1 caracteres!");
+                }
+            } while (entrada.length() > 1);
+
+            letra = entrada.charAt(0);
+        }
+
+        System.out.println("Quantidade de vogais digitadas: " + vogais);
+
     }
 }
 

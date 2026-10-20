@@ -1,18 +1,45 @@
+// 17    Permita o cadastro de nome e preço de produtos até que "fim" seja digitado. Calcule o total geral.
+
+
 import java.util.Scanner;
-// 11    Peça CPF até que seja digitado com exatamente 11 dígitos.
 
 public class testes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite seu CPF");
-        int CPF = sc.nextInt();
+        String entrada;
+        char letra;
+        int vogais = 0;
 
-        while(CPF < 11){
-            System.err.println("CPF inválido");
-            System.out.println("Digite seu CPF novamente");
-            CPF = sc.nextInt();
+        do {
+            System.out.print("Digite uma letra (x para sair): ");
+            entrada = sc.next().toLowerCase();
+
+            if (entrada.length() > 1) {
+                System.out.println("Digite no máximo 1 caracteres!");
+            }
+        } while (entrada.length() > 1);
+
+        letra = entrada.charAt(0);
+
+        while (letra != 'x') {
+            if (letra == 'a' || letra == 'e' || letra == 'i'
+                    || letra == 'o' || letra == 'u') {
+                vogais++;
+            }
+
+            do {
+                System.out.print("Digite outra letra (x para sair): ");
+                entrada = sc.next().toLowerCase();
+
+                if (entrada.length() > 1) {
+                    System.out.println("Digite no máximo 1 caracteres!");
+                }
+            } while (entrada.length() > 1);
+
+            letra = entrada.charAt(0);
         }
 
-        System.out.println(CPF);
+        System.out.println("Quantidade de vogais digitadas: " + vogais);
+
     }
 }
