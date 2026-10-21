@@ -10,7 +10,7 @@ public class ListaTres {
             System.out.println("Digite o número do exercício (1 a 23) ou 0 para sair:");
             System.out.print("Opção: ");
             while(!sc.hasNextInt()){
-                System.out.println("Opção inválida! Digite um NUMERO.");
+                System.out.println("\nOpção inválida! Digite um NUMERO.");
                 sc.next();
                 System.out.println("Opção: ");
             }
@@ -42,11 +42,11 @@ public class ListaTres {
                     case 21 -> ex21();
                     case 22 -> ex22();
                     case 23 -> ex23();
-                    case 0 -> System.out.println("Encerrando programa...");
-                    default -> System.out.println("Opção inválida!");
+                    case 0 -> System.out.println("\nEncerrando programa...");
+                    default -> System.out.println("\nOpção inválida! Digite um número entre 1 e 23!");
                 }
                 if (escolha != 0){
-                    System.out.println("PRessione Enter para voltar ao menu...");
+                    System.out.println("\nPRessione Enter para voltar ao menu...");
                     sc.nextLine();
                 }
 
@@ -185,6 +185,13 @@ public class ListaTres {
         System.out.println("Votaram no Sim: " + total1);
         System.out.println("Votaram no não: " + total2);
         System.out.println("Votaram no talvez: " + total3);
+
+        if(total1>total2 && total1 > total3)
+            System.out.println("Sim é o vencedor!");
+        else if(total2 >total1 && total2>total3)
+            System.out.println("Não é o vencedor!");
+        else
+            System.out.println("Talvez é o vencedor!");
     }
 
     public static void ex09(){
@@ -300,10 +307,10 @@ public class ListaTres {
 
         while(op != 4){
             System.out.println("Menu");
-            System.out.println("1 -");
-            System.out.println("2 -");
-            System.out.println("3 -");
-            System.out.println("4 -");
+            System.out.println("1 - MÍ");
+            System.out.println("2 - FÁ");
+            System.out.println("3 - SOL");
+            System.out.println("4 - sair");
             op = sc.nextInt();
         }
     }
@@ -529,3 +536,4 @@ public class ListaTres {
     }
 }
 
+// adoro gatos
