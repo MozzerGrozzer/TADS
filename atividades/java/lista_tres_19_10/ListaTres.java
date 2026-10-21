@@ -1,15 +1,22 @@
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 public class ListaTres {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         int escolha;
         do { 
             System.out.println("Lista 3");
             System.out.println("Digite o número do exercício (1 a 23) ou 0 para sair:");
             System.out.print("Opção: ");
+            while(!sc.hasNextInt()){
+                System.out.println("Opção inválida! Digite um NUMERO.");
+                sc.next();
+                System.out.println("Opção: ");
+            }
+            
             escolha = sc.nextInt();
+            sc.nextLine();
             
             switch (escolha) {
                     case 1 -> ex01();
@@ -38,6 +45,11 @@ public class ListaTres {
                     case 0 -> System.out.println("Encerrando programa...");
                     default -> System.out.println("Opção inválida!");
                 }
+                if (escolha != 0){
+                    System.out.println("PRessione Enter para voltar ao menu...");
+                    sc.nextLine();
+                }
+
         } while (escolha != 0);
     }
 
@@ -50,14 +62,11 @@ public class ListaTres {
             contador++;
         } while (caractere != '.');
         System.out.printf("Foram digitados %d caracteres", --contador);
-        System.out.println("\n\nAperte Enter para voltar para o menu...");
-        sc.nextLine();
     }
 
     public static void ex02() {
         String palavra;
         int qtdVogais = 0;
-        sc.nextLine(); // Limpando buffer
         System.out.println("Digite uma palavra: ");
         palavra = sc.nextLine().toLowerCase();
         for (int i = 0; i < palavra.length(); i++) {
