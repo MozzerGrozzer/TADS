@@ -1,15 +1,3 @@
-main{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: inherit;
-    position: relative;
-    height: 90vh;
-    background-color: #4f4fff;
-    font-family: "Oswald", sans-serif;
-}
-
 header{
     display:flex;
     justify-content: center;
@@ -51,10 +39,47 @@ p{
     font-family: "Oswald", sans-serif; 
 }
 
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    position: relative;
+    height: 90vh;
+    background-color: #4f4fff;
+    font-family: "Oswald", sans-serif;
+}
+
 .mainText{
     width: auto;
     color:#07062b;
     padding-bottom: 2%;
+}
+
+.floater{
+    display:flex;
+    position: absolute;
+    flex-direction: column;
+    left:7%;
+    bottom:6%;
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 20px;    
+    padding: 2%;
+}
+
+.floater p{
+    width: 250px;
+}
+
+.floater p:nth-child(1){
+    font-family: "Caprasimo", serif;
+    font-size: 18px;
+}
+
+.floater p:nth-child(2){
+    font-family: 'Courier New', Courier, monospace;
+    color:greenyellow;
 }
 
 main p {
