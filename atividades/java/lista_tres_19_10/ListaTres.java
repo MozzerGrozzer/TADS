@@ -336,5 +336,187 @@ public class ListaTres {
         System.out.println("Quantidade de vogais digitadas: " + vogais);
 
     }
+
+    public static void ex17(){
+        String nome;
+        double preco;
+        double total = 0;
+
+        System.out.println("Digite o nome do produto ('fim' para encerrar): ");
+        nome = sc.nextLine();
+
+        while(!nome.equalsIgnoreCase("fim")){
+            System.out.println("Digite o preço do produto: R$ ");
+            preco = sc.nextDouble();
+            sc.nextLine();
+
+            total =+ preco;
+
+            System.out.println("Produto cadastraod: " + nome);
+
+            System.out.println("\nDigite o nome do próximo produto(ou 'fim' para encerrar: )");
+            nome = sc.nextLine();
+        }
+
+        System.out.printf("%nTOtal geral: R$ %.2f%n", total);
+    }
+
+    public static void ex18(){
+        System.out.println("Digite uma frase: ");
+        String frase = sc.nextLine().trim();
+        
+        int cont = 0;
+
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) != ' ' &&
+                (i == 0 || frase.charAt(i - 1) == ' ')) {
+                cont++;
+            }
+        }
+
+        System.out.println("Quantidade de palavras: " + cont);
+    }
+
+    public static void ex19(){
+        String senha;
+        boolean TemMaiuscula;
+        boolean temNumero;
+
+        do { 
+            TemMaiuscula = false;
+            temNumero = false;
+
+            System.out.println("Digite uma senha válida: ");
+            senha = sc.nextLine();
+
+            for (int i = 0; i < senha.length(); i++){
+                char caractere = senha.charAt(i);
+
+                if (Character.isUpperCase(caractere)){
+                    TemMaiuscula = true;
+                }
+
+                if(Character.isDigit(caractere)){
+                    temNumero = true;
+                }
+            }
+
+            if(!TemMaiuscula || !temNumero || senha.length() < 8) {
+                System.out.println("Senha inválida!!!");
+
+                if (!TemMaiuscula){
+                    System.out.println("- PRecisa ter uma letra maiúscula.");
+                }
+                
+                if(!temNumero){
+                    System.out.println("- Precisa ter um número");
+                }
+
+                if(senha.length() < 8){
+                    System.out.println("- Precisa ter pelo menos 8 caracteres.");
+                }
+            }
+        } while (!TemMaiuscula || !temNumero || senha.length()<8);
+
+        System.out.println("Senha válida!");
+
+        System.out.println("Agora confirme ela:"); // hehehehehehhehehehhehe
+        String sim = sc.nextLine();
+        System.out.println("Ha ha você repetiu sua senha! \n fechando programa...");
+    }
+
+    public static void ex20(){
+        System.out.print("Digite uma palavra: ");
+        String palavra = sc.nextLine();
+
+        System.out.print("Digite um caractere: ");
+        char caractere = sc.nextLine().charAt(0);
+
+        int quantidade = 0;
+
+        for (int i = 0; i < palavra.length(); i++) {
+            if (palavra.charAt(i) == caractere) {
+                quantidade++;
+            }
+        }
+
+        System.out.println("A palavra era: " + palavra);
+        System.out.println("O caractere '" + caractere + "' aparece " + quantidade + " vezes.");
+    }
+
+    public static void ex21(){
+        int numero;
+
+        do {
+            System.out.print("Digite um número entre 1 e 100: ");
+            numero = sc.nextInt();
+
+            if (numero < 1 || numero > 100) {
+                System.out.println("Número inválido! Tente novamente.");
+            }
+
+        } while (numero < 1 || numero > 100);
+
+        System.out.println("Número válido: " + numero);
+    }
+
+    public static void ex22(){
+        System.out.println("Digite um texto com letras e números: ");
+        String texto = sc.nextLine();
+
+        int total = 0;
+
+        for(int i =0; i < texto.length(); i++){
+            char caractere = texto.charAt(i);
+
+            if(Character.isDigit(caractere)){
+                total += Character.getNumericValue(caractere);
+            }
+        }
+        System.out.println("Soma dos dígitos: " + total);
+    }
+
+    public static void ex23(){ // WHAT THE FUCK
+        int numero, soma = 0, quant = 0, menor = 0, maior = 0, pares = 0, impares = 0;
+
+        System.out.println("Digite um número inteiro (insira um negativo para encerrar): ");
+        numero = sc.nextInt();
+
+        while (numero >= 0) { // parte de checagem
+            if (quant == 0) {
+                menor = numero;
+                maior = numero;
+            } else {
+                if (numero < menor)
+                    menor = numero;
+                
+                if(numero > maior) 
+                    maior = numero;                
+            }
+
+            soma += numero;
+            quant++;
+            
+            if(numero % 2 == 0)
+                pares++;
+            else
+                impares++;
+            
+            System.out.println("Digite um número inteiro (insira um negativo para encerrar): ");
+            numero=sc.nextInt();
+        }
+
+        if(quant > 0){
+            double media = (double) soma / quant;
+
+            System.out.println("\nOs resultados!!");
+            System.out.printf("Média: %.2f%n", media);
+            System.out.println("Menor número: " + menor);
+            System.out.println("Maior número: " + maior);
+            System.out.println("Quantidade de pares: " + pares);
+            System.out.println("Quantidade de impares: " + impares);
+        } else
+            System.err.println("Nenhum número válido foi digitado.");
+    }
 }
 

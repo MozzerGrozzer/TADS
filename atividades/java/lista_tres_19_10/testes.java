@@ -1,45 +1,50 @@
-// 17    Permita o cadastro de nome e preço de produtos até que "fim" seja digitado. Calcule o total geral.
-
+// 23    Peça a digitação de um número inteiro até que seja digitado um valor negativo. Ao digitar um valor negativo, deverão ser exibidos a média dos números digitados, o menor número, o maior número, quantidade de números pares e quantidade de números ímpares.
 
 import java.util.Scanner;
 
 public class testes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String entrada;
-        char letra;
-        int vogais = 0;
+        
+        int numero, soma = 0, quant = 0, menor = 0, maior = 0, pares = 0, impares = 0;
 
-        do {
-            System.out.print("Digite uma letra (x para sair): ");
-            entrada = sc.next().toLowerCase();
+        System.out.println("Digite um número inteiro (insira um negativo para encerrar): ");
+        numero = sc.nextInt();
 
-            if (entrada.length() > 1) {
-                System.out.println("Digite no máximo 1 caracteres!");
-            }
-        } while (entrada.length() > 1);
-
-        letra = entrada.charAt(0);
-
-        while (letra != 'x') {
-            if (letra == 'a' || letra == 'e' || letra == 'i'
-                    || letra == 'o' || letra == 'u') {
-                vogais++;
+        while (numero >= 0) { // parte de checagem
+            if (quant == 0) {
+                menor = numero;
+                maior = numero;
+            } else {
+                if (numero < menor)
+                    menor = numero;
+                
+                if(numero > maior) 
+                    maior = numero;                
             }
 
-            do {
-                System.out.print("Digite outra letra (x para sair): ");
-                entrada = sc.next().toLowerCase();
-
-                if (entrada.length() > 1) {
-                    System.out.println("Digite no máximo 1 caracteres!");
-                }
-            } while (entrada.length() > 1);
-
-            letra = entrada.charAt(0);
+            soma += numero;
+            quant++;
+            
+            if(numero % 2 == 0)
+                pares++;
+            else
+                impares++;
+            
+            System.out.println("Digite um número inteiro (insira um negativo para encerrar): ");
+            numero=sc.nextInt();
         }
 
-        System.out.println("Quantidade de vogais digitadas: " + vogais);
+        if(quant > 0){
+            double media = (double) soma / quant;
 
+            System.out.println("\nOs resultados!!");
+            System.out.printf("Média: %.2f%n", media);
+            System.out.println("Menor número: " + menor);
+            System.out.println("Maior número: " + maior);
+            System.out.println("Quantidade de pares: " + pares);
+            System.out.println("Quantidade de impares: " + impares);
+        } else
+            System.err.println("Nenhum número válido foi digitado.");
     }
 }
