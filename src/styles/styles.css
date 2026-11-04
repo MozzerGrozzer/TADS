@@ -92,6 +92,7 @@ main a {
     color:#07062b;
     text-decoration: underline;
     font-family: "Oswald", sans-serif;
+    margin: 0px 5px;
 }
 
 .waveContainer{
@@ -188,11 +189,19 @@ main p{
     color:#07062b;
 }
 
-.flexGridGeneral, .flexGridRecents{
-    display:flex;
-    flex-direction: row;
+.flexGridRecents{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 75px;
     padding:1%;
+}
+
+.flexGridGeneral{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding:1%;
+    gap:15px;
 }
 
 #gridItem a{
