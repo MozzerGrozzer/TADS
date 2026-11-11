@@ -1,7 +1,7 @@
 """
 arquivos em apv/. aparecem no site automaticamente waow
 
-lembrar de executar na raiz do repositório: python3 scripts/autoGrid.py
+lembrar de executar na raiz do repositório: python3 src/scripts/autoGrid.py
 """
 
 from html import escape
